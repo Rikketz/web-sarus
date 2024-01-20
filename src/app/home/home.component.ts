@@ -7,6 +7,8 @@ import { Component } from '@angular/core';
   templateUrl: './home.component.html',
   styleUrl: './home.component.sass'
 })
+
 export class HomeComponent {
+
 
 }
