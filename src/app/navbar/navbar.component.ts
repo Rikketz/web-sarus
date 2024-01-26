@@ -8,7 +8,11 @@ import { Component } from '@angular/core';
   styleUrl: './navbar.component.sass'
 })
 export class NavbarComponent {
-  userIsLoggedIn: boolean = false;
+  userIsLoggedIn: boolean = true;
   username: string = 'Sarus';
+
+  changeTest(){
+    this.userIsLoggedIn = !this.userIsLoggedIn;
+  }
 
 }
