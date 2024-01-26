@@ -1,0 +1,21 @@
+<div class="header">
+  <div class="header__logo">
+    <a class="header__logo--a" href="#">
+    <img class="header__logo--img" src="../../assets/pictures/logoSarus.png" alt="logo"></a>
+  </div>
+  <div class="header__links">
+    <h3 class="header__links--p"><a class="header__links--a" href="/juegos">Juegos</a></h3>
+
+    <h3 class="header__links--p"><a class="header__links--a" href="/relatos">Relatos</a></h3>
+
+    <h3 class="header__links--p"><a class="header__links--a" href="/tutoriales">Tutoriales</a></h3>
+
+    @if (userIsLoggedIn) {
+      <p onclick="{changeTest()}" class="header__links--p"><a href="/profile">Hola, {{ username }}</a></p>
+    }
+    @else {
+      <p onclick="{changeTest()}" class="header__links--p"><a class="header__links--a" href="#">Iniciar Sesión</a></p>
+    }
+
+  </div>
+</div>
